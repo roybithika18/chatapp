@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 // Enable CORS for both localhost and production domain
 app.use(cors({
-    origin: ["http://localhost:3000", "https://chat-app-yt.onrender.com"], // Allow your frontend origins
+    origin: ["http://localhost:3000", "https://chatapp-xu0h.onrender.com"], // Allow your frontend origins
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // Enable if using cookies or authentication headers
 }));
