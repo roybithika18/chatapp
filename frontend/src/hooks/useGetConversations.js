@@ -13,7 +13,7 @@ const useGetConversations = () => {
 			const token = getCookie("jwt"); // Assuming your JWT token is stored in localStorage
 
 			try {
-				const res = await fetch("http://localhost:5000/api/users", {
+				const res = await fetch("https://chatapp-xu0h.onrender.com/api/users", {
 					method: "GET",
 					headers: {
 						Authorization: `Bearer ${token}`, // Add the token in the Authorization header
