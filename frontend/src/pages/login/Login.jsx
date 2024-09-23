@@ -69,16 +69,14 @@ const Login = () => {
                         Don't have an account? Sign up
                     </Link>
                 </div>
-
-                <div className="absolute top-4 right-4">
-                    <button 
-                        onClick={() => setDarkMode(!darkMode)}
-                        className={`p-2 rounded-full ${darkMode ? 'bg-gray-700 text-yellow-400' : 'bg-gray-200 text-gray-800'} transition-colors duration-300`}
-                    >
-                        {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-                    </button>
-                </div>
             </div>
+            
+            <button 
+                onClick={() => setDarkMode(!darkMode)}
+                className={`fixed top-4 right-4 p-2 rounded-full ${darkMode ? 'bg-gray-700 text-yellow-400' : 'bg-gray-200 text-gray-800'} transition-colors duration-300`}
+            >
+                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
         </div>
     );
 };
