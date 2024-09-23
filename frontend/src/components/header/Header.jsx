@@ -13,13 +13,13 @@ const Header = () => {
         <nav className="bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-lg">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
-                    <Link to="/" className="text-2xl font-bold">
+                    <Link to="/" className="text-2xl font-bold hover:opacity-60">
                         CHAT<span className="text-purple-200">App</span>
                     </Link>
                     
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex space-x-8">
-                        <NavItem to="/" icon={<Home size={18} />} text="Home" />
+                        
                         <NavItem to="/about" icon={<Info size={18} />} text="About" />
                     </ul>
 
@@ -34,7 +34,7 @@ const Header = () => {
             {isMenuOpen && (
                 <div className="md:hidden">
                     <ul className="px-2 pt-2 pb-4 space-y-2">
-                        <MobileNavItem to="/" icon={<Home size={18} />} text="Home" onClick={toggleMenu} />
+                        
                         <MobileNavItem to="/about" icon={<Info size={18} />} text="About" onClick={toggleMenu} />
                     </ul>
                 </div>
